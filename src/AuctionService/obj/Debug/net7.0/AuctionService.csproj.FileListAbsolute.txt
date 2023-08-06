@@ -37,3 +37,9 @@
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/System.CodeDom.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.CopyComplete
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.Abstractions.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.RabbitMqTransport.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.pdb
