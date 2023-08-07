@@ -21,16 +21,17 @@ public class SearchController : ControllerBase
 
     query = searchParams.OrderBy switch
     {
-      "make" => query.Sort(x => x.Ascending(a => a.Make)),
+      "make" => query.Sort(x => x.Ascending(a => a.Make))
+        .Sort(x => x.Ascending(a => a.Model)),
       "new" => query.Sort(x => x.Descending(a => a.CreatedAt)),
-      _ => query.Sort(x => x.Ascending(a => a.AuctionEnd)),
+      _ => query.Sort(x => x.Ascending(a => a.AuctionEnd))
     };
-
 
     query = searchParams.FilterBy switch
     {
       "finished" => query.Match(x => x.AuctionEnd < DateTime.UtcNow),
-      "endingSoon" => query.Match(x => x.AuctionEnd < DateTime.UtcNow.AddHours(6) && x.AuctionEnd > DateTime.UtcNow),
+      "endingSoon" => query.Match(x => x.AuctionEnd < DateTime.UtcNow.AddHours(6)
+                                       && x.AuctionEnd > DateTime.UtcNow),
       _ => query.Match(x => x.AuctionEnd > DateTime.UtcNow)
     };
 
@@ -44,7 +45,6 @@ public class SearchController : ControllerBase
       query.Match(x => x.Winner == searchParams.Winner);
     }
 
-
     query.PageNumber(searchParams.PageNumber);
     query.PageSize(searchParams.PageSize);
 
@@ -56,6 +56,5 @@ public class SearchController : ControllerBase
       pageCount = result.PageCount,
       totalCount = result.TotalCount
     });
-
   }
 }
