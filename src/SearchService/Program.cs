@@ -20,7 +20,7 @@ builder.Services.AddHttpClient<AuctionSvcHttpClient>().AddPolicyHandler(GetPolic
 builder.Services.AddMassTransit(x =>
 {
     
-    x.AddConsumersFromNamespaceContaining<AuctionCreateConsumer>();
+    x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
     
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search",false));
     
@@ -29,7 +29,7 @@ builder.Services.AddMassTransit(x =>
         cfg.ReceiveEndpoint("search-auction-created", e =>
         {
             e.UseMessageRetry(r=>r.Interval(5,5));
-            e.ConfigureConsumer<AuctionCreateConsumer>(context);
+            e.ConfigureConsumer<AuctionCreatedConsumer>(context);
         });
         cfg.ConfigureEndpoints(context);
     });

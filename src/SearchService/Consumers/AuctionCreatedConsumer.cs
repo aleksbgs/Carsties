@@ -6,11 +6,11 @@ using SearchService.Models;
 
 namespace SearchService.Consumers;
 
-public class AuctionCreateConsumer : IConsumer<AuctionCreated>
+public class AuctionCreatedConsumer : IConsumer<AuctionCreated>
 {
     private readonly IMapper _mapper;
 
-    public AuctionCreateConsumer(IMapper mapper)
+    public AuctionCreatedConsumer(IMapper mapper)
     {
         _mapper = mapper;
     }
