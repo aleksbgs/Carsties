@@ -1,4 +1,5 @@
 using System.Net;
+using System.Security.Cryptography;
 using MassTransit;
 using Polly;
 using Polly.Extensions.Http;
@@ -25,6 +26,11 @@ builder.Services.AddMassTransit(x =>
     
     x.UsingRabbitMq((context, cfg) =>
     {
+        cfg.ReceiveEndpoint("search-auction-created", e =>
+        {
+            e.UseMessageRetry(r=>r.Interval(5,5));
+            e.ConfigureConsumer<AuctionCreateConsumer>(context);
+        });
         cfg.ConfigureEndpoints(context);
     });
 });

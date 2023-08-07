@@ -43,3 +43,4 @@
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/RabbitMQ.Client.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Contracts.pdb
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/MassTransit.EntityFrameworkCoreIntegration.dll
