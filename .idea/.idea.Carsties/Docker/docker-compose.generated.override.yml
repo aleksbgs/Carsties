@@ -1,0 +1,93 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  auction-svc:
+    build:
+      context: "/Users/admin/Desktop/demo/Carsties"
+      dockerfile: "src/AuctionService/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-x64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "/Users/admin/.nuget/packages"
+      NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "aleksbgs/auction-svc:dev"
+    ports:
+    - "127.0.0.1:57002:57100"
+    - "127.0.0.1:57202:57300"
+    volumes:
+    - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
+    - "/Users/admin/Desktop/demo/Carsties/src/AuctionService:/app:rw"
+    - "/Users/admin/Desktop/demo/Carsties:/src:rw"
+    - "/Users/admin/.local/share/JetBrains/RiderRemoteDebugger/2023.2/Linux64:/riderDebugger"
+    - "/Applications/Rider.app/Contents/bin:/riderLogsConf"
+    - "/Users/admin/Library/Logs/JetBrains/Rider2023.2/DebuggerWorker/JetBrains.Debugger.Worker.2023_8_10_21_28_29:/riderLogs:rw"
+    working_dir: "/app"
+  identity-svc:
+    build:
+      context: "/Users/admin/Desktop/demo/Carsties"
+      dockerfile: "src/IdentityService/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-x64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net7.0/IdentityService.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "/Users/admin/.nuget/packages"
+      NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "aleksbgs/identity-svc:dev"
+    ports:
+    - "127.0.0.1:57003:57100"
+    - "127.0.0.1:57203:57300"
+    volumes:
+    - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
+    - "/Users/admin/Desktop/demo/Carsties/src/IdentityService:/app:rw"
+    - "/Users/admin/Desktop/demo/Carsties:/src:rw"
+    - "/Users/admin/.local/share/JetBrains/RiderRemoteDebugger/2023.2/Linux64:/riderDebugger"
+    - "/Applications/Rider.app/Contents/bin:/riderLogsConf"
+    - "/Users/admin/Library/Logs/JetBrains/Rider2023.2/DebuggerWorker/JetBrains.Debugger.Worker.2023_8_10_21_28_29:/riderLogs:rw"
+    working_dir: "/app"
+  search-svc:
+    build:
+      context: "/Users/admin/Desktop/demo/Carsties"
+      dockerfile: "src/SearchService/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-x64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "/Users/admin/.nuget/packages"
+      NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "aleksbgs/search-svc:dev"
+    ports:
+    - "127.0.0.1:57004:57100"
+    - "127.0.0.1:57204:57300"
+    volumes:
+    - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
+    - "/Users/admin/Desktop/demo/Carsties/src/SearchService:/app:rw"
+    - "/Users/admin/Desktop/demo/Carsties:/src:rw"
+    - "/Users/admin/.local/share/JetBrains/RiderRemoteDebugger/2023.2/Linux64:/riderDebugger"
+    - "/Applications/Rider.app/Contents/bin:/riderLogsConf"
+    - "/Users/admin/Library/Logs/JetBrains/Rider2023.2/DebuggerWorker/JetBrains.Debugger.Worker.2023_8_10_21_28_29:/riderLogs:rw"
+    working_dir: "/app"
