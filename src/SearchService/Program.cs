@@ -1,5 +1,4 @@
 using System.Net;
-using System.Security.Cryptography;
 using MassTransit;
 using Polly;
 using Polly.Extensions.Http;
