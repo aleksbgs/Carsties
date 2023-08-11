@@ -51,3 +51,10 @@
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Google.Protobuf.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Core.Api.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Client.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.ClientFactory.dll
+/Users/admin/Desktop/demo/Carsties/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Common.dll
