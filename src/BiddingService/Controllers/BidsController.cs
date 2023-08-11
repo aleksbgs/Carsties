@@ -1,5 +1,5 @@
 using System;
-using System.Text.RegularExpressions;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using BiddingService.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -67,5 +67,16 @@ public class BidsController:ControllerBase
 
     }
 
+
+    [HttpGet("{auctionId}")]
+    public async Task<ActionResult<List<Bid>>> GetBidsForAuction(string auctionId)
+    {
+        var bids = await DB.Find<Bid>()
+            .Match(a => a.AuctionId == auctionId)
+            .Sort(b => b.Descending(a => a.BidTime))
+            .ExecuteAsync();
+
+        return bids;
+    }
 
 }
