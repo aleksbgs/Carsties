@@ -15,7 +15,7 @@ public class GrpcAuctionService : GrpcAuction.GrpcAuctionBase
     public override async Task<GrpcAuctionResponse> GetAuction(GetAuctionRequest request, ServerCallContext context)
     {
         Console.WriteLine("---> Received Grpc request for auction");
-
+ 
         var auction = await _dbContext.Auctions.FindAsync(Guid.Parse(request.Id));
 
         if (auction == null) throw new RpcException(new Status(StatusCode.NotFound, "Not Found"));
