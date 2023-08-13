@@ -37,7 +37,7 @@ public class AuctionController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<AuctionDto>> GetAuctionById(Guid id)
     {
-        var auction = await _repo.GetAuctionById(id);
+        var auction = await _repo.GetAuctionByIdAsync(id);
         if (auction == null) return NotFound();
 
         return auction;

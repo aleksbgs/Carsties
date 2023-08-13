@@ -18,6 +18,12 @@ public class AuctionRepository : IAuctionRepository
         _mapper = mapper;
     }
 
+    public async Task<AuctionDto> GetAuctionByIdAsync(Guid id)
+    {
+        return await _context.Auctions
+            .ProjectTo<AuctionDto>(_mapper.ConfigurationProvider)
+            .FirstOrDefaultAsync(x => x.Id == id);
+    }
 
     public async Task<List<AuctionDto>> GetAuctionsAsync(string date)
     {
@@ -32,14 +38,7 @@ public class AuctionRepository : IAuctionRepository
         return await query.ProjectTo<AuctionDto>(_mapper.ConfigurationProvider).ToListAsync();
 
     }
-
-    public async Task<AuctionDto> GetAuctionById(Guid id)
-    {
-        return await _context.Auctions
-            .ProjectTo<AuctionDto>(_mapper.ConfigurationProvider)
-            .FirstOrDefaultAsync(x => x.Id == id);
-    }
-
+    
     public async Task<Auction> GetAuctionEntityById(Guid id)
     {
         return await _context.Auctions
