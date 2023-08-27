@@ -112,6 +112,22 @@ services:
       - 7004:80
     depends_on:
       - rabbitmq
+  web-app:
+    image: aleksbgs/web-app
+    build: 
+      context: .
+      dockerfile: frontend/web-app/Dockerfile
+    volumes:
+      - /var/lib/web/data
+    environment:
+      - NEXTAUTH_SECRET=somethingreallyreallysecret
+      - NEXTAUTH_URL=http://web-app
+      - NEXTAUTH_URL_INTERNAL=http://web-app:3000
+      - API_URL=http://gateway-svc/
+      - ID_URL=http://identity-svc
+      - NEXT_PUBLIC_NOTIFY_URL=http://gateway-svc/notifications
+      - VIRTUAL_PORT=3000
+  
 volumes: 
   pgdata:
   mongodata:
