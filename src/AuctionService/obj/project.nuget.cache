@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cNKwr0nHlTNfg78bWNV8HX3zZoGDrNwVnlhYCG8se6Gl/rm5atMnG9UpBh6ynCXPZ54vi47mZedhSpYgM9DzQ==",
+  "dgSpecHash": "R2eQXF7Ps6lOq57S17+kNGo+SaXv1HDyG1J/awTSEHi31i692BluY1Z2xx4/APiLokhg0w7rJBpMkIHRhlAObg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+  "projectFilePath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
