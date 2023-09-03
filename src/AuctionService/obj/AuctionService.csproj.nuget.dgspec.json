@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {}
+    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {
+    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+        "projectUniqueName": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
         "projectName": "AuctionService",
-        "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+        "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
         "packagesPath": "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\obj\\",
+        "outputPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\aleksandar.markovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco/nuget/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco_BC/nuget/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco_DO/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
-                "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj"
+              "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -111,21 +109,17 @@
         }
       }
     },
-    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\aleksandar.markovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,8 +127,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco/nuget/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco_BC/nuget/v3/index.json": {},
+          "https://devops.see.asseco.com/DIGITAL/_packaging/Asseco_DO/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
