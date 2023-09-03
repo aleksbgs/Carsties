@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {}
+    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {
+    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+        "projectUniqueName": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
         "projectName": "AuctionService",
-        "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+        "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
         "packagesPath": "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\obj\\",
+        "outputPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleksandar.markovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -31,8 +31,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj"
+              "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
+                "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -109,14 +109,14 @@
         }
       }
     },
-    "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
+    "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
+        "projectPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
+        "outputPath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleksandar.markovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
