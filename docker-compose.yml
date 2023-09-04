@@ -80,7 +80,7 @@ services:
     
   identity-svc:
     image: aleksbgs/identity-svc:latest
-    build:
+    build: 
       context: .
       dockerfile: src/IdentityService/Dockerfile
     environment:
@@ -90,7 +90,7 @@ services:
       - ConnectionStrings__DefaultConnection=Server=postgres:5432;User Id=postgres;Password=postgrespw;Database=identity
       - VIRTUAL_HOST=id.carsties.com
     depends_on:
-      - postgres 
+      - postgres
     networks:
       custom:
         ipv4_address: 10.5.0.200
