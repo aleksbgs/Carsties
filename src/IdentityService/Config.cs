@@ -28,7 +28,6 @@ new Client
                 RedirectUris = { "https://www.getpostman.com/ouath2/callback" },
                 ClientSecrets = new[] { new Secret("NotASecret".Sha256()) },
                 AllowedGrantTypes = { GrantType.ResourceOwnerPassword }
-
             },
             new Client
             {

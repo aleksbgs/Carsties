@@ -125,7 +125,7 @@
         "projectName": "Contracts",
         "projectPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleksandar.markovic\\Source\\Repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

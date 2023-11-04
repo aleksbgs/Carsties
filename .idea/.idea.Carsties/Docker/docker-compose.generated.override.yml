@@ -13,7 +13,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/auction-svc:dev"
+    image: "aleksbgs1/auction-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
@@ -33,7 +33,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/bid-svc:dev"
+    image: "aleksbgs1/bid-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
@@ -53,7 +53,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/gateway-svc:dev"
+    image: "aleksbgs1/gateway-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
@@ -74,7 +74,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/identity-svc:dev"
+    image: "aleksbgs1/identity-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
@@ -94,7 +94,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/notify-svc:dev"
+    image: "aleksbgs1/notify-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"
@@ -114,7 +114,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "/Users/admin/.nuget/packages"
       NUGET_FALLBACK_PACKAGES: "/Users/admin/.nuget/packages"
-    image: "aleksbgs/search-svc:dev"
+    image: "aleksbgs1/search-svc:dev"
     ports: []
     volumes:
     - "/Users/admin/.nuget/packages:/root/.nuget/fallbackpackages"

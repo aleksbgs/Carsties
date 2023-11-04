@@ -35,7 +35,7 @@ services:
     networks:
       custom:
   auction-svc:
-    image: aleksbgs/auction-svc:latest
+    image: aleksbgs1/auction-svc:latest
     build:
       context: .
       dockerfile: src/AuctionService/Dockerfile
@@ -60,7 +60,7 @@ services:
       custom:
     
   search-svc:
-    image: aleksbgs/search-svc:latest
+    image: aleksbgs1/search-svc:latest
     build:
       context: .
       dockerfile: src/SearchService/Dockerfile
@@ -79,7 +79,7 @@ services:
       custom:
     
   identity-svc:
-    image: aleksbgs/identity-svc:latest
+    image: aleksbgs1/identity-svc:latest
     build: 
       context: .
       dockerfile: src/IdentityService/Dockerfile
@@ -95,7 +95,7 @@ services:
       custom:
         ipv4_address: 10.5.0.200
   gateway-svc:
-    image: aleksbgs/gateway-svc:latest
+    image: aleksbgs1/gateway-svc:latest
     build:
       context: .
       dockerfile: src/GatewayService/Dockerfile
@@ -107,7 +107,7 @@ services:
     networks:
       custom:
   bid-svc:
-    image: aleksbgs/bid-svc:latest
+    image: aleksbgs1/bid-svc:latest
     build:
       context: .
       dockerfile: src/BiddingService/Dockerfile
@@ -126,7 +126,7 @@ services:
     networks:
       custom:
   notify-svc:
-    image: aleksbgs/notify-svc:latest
+    image: aleksbgs1/notify-svc:latest
     build:
       context: .
       dockerfile: src/NotificationService/Dockerfile
@@ -141,7 +141,7 @@ services:
     networks:
       custom:
   web-app:
-    image: aleksbgs/web-app
+    image: aleksbgs1/web-app
     build: 
       context: .
       dockerfile: frontend/web-app/Dockerfile
