@@ -127,3 +127,4 @@ C:\Users\aleksandar.markovic\source\repos\aleksbgs\Carsties\src\AuctionService\o
 C:\Users\aleksandar.markovic\source\repos\aleksbgs\Carsties\src\AuctionService\obj\Debug\net7.0\AuctionService.pdb
 C:\Users\aleksandar.markovic\source\repos\aleksbgs\Carsties\src\AuctionService\obj\Debug\net7.0\AuctionService.genruntimeconfig.cache
 C:\Users\aleksandar.markovic\source\repos\aleksbgs\Carsties\src\AuctionService\obj\Debug\net7.0\ref\AuctionService.dll
+C:\Users\aleksandar.markovic\Source\Repos\aleksbgs\Carsties\src\AuctionService\bin\Debug\net7.0\Polly.dll

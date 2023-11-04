@@ -13,5 +13,4 @@ public class BidPlaced
     public int Amount { get; set; }
 
     public string BidStatus { get; set; }
-    
 }

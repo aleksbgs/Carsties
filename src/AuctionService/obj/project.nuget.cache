@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xoE9/KwV9NfVUDU/oN0sLl+LYfKfwKx945TyPmywTpHWiIRD4Vv8Re5uljkO13z2KIXvGu/z+TEFA4RZBT28tA==",
+  "dgSpecHash": "EK0pz8aI7T3BHdKZEeLOb3aEmCX39Oru6rKfcLEALmQ3gsAdJizxH3/6un49bzDlketk6FQmRsGINiauyLC06A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
+  "projectFilePath": "C:\\Users\\aleksandar.markovic\\source\\repos\\aleksbgs\\Carsties\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -58,6 +58,7 @@
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.4\\npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
+    "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\polly\\7.2.4\\polly.7.2.4.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\aleksandar.markovic\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
