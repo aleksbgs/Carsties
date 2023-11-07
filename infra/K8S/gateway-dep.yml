@@ -17,7 +17,7 @@ spec:
         imagePullPolicy: Never
         env:
           - name: ClientApp
-            value: https://app.riomire.store
+            value: https://app.riomire.com
           -  name: IdentityServiceUrl
              value: https://id.riomire.com
 
