@@ -55,18 +55,18 @@ spec:
 
 
 
----
-  apiVersion: v1
-  kind: Service
-  metadata:
-    name: auction-lb
-  spec:
-    type: LoadBalancer
-    selector:
-      app: auction-svc
-    ports:
-    - port: 80
-      targetPort: 80
+# ---
+#   apiVersion: v1
+#   kind: Service
+#   metadata:
+#     name: auction-lb
+#   spec:
+#     type: LoadBalancer
+#     selector:
+#       app: auction-svc
+#     ports:
+#     - port: 80
+#       targetPort: 80
 
 
 
