@@ -5,6 +5,12 @@ metadata:
   labels:
     name: ingress-svc
 spec:
+  ingressClassName: nginx
+  tls:
+     - hosts:
+       - app.riomire.com
+       - api.riomire.com
+       secretName: riomire-app-tls
   rules:
   - host: app.riomire.com
     http:
