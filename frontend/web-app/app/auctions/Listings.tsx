@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react'
 import AuctionCard from './AuctionCard';
-import { Auction, PagedResult } from '@/types';
 import AppPagination from '../components/AppPagination';
 import { getData } from '../actions/auctionActions';
 import Filters from './Filters';
@@ -13,8 +12,8 @@ import EmptyFilter from '../components/EmptyFilter';
 import { useAuctionStore } from '@/hooks/useAuctionStore';
 
 export default function Listings() {
-    const [loading, setLoading] = useState(true);
-    const params = useParamsStore(state => ({
+    const [loading, setLoading] = useState(true); 
+    const params = useParamsStore(state => ({ //TODO: Still something wrong here?
         pageNumber: state.pageNumber,
         pageSize: state.pageSize,
         searchTerm: state.searchTerm,
@@ -29,23 +28,22 @@ export default function Listings() {
         pageCount: state.pageCount
     }), shallow);
     const setData = useAuctionStore(state => state.setData);
-
+    
     const setParams = useParamsStore(state => state.setParams);
     const url = qs.stringifyUrl({ url: '', query: params })
-
+    
     function setPageNumber(pageNumber: number) {
         setParams({ pageNumber })
     }
-
+    
     useEffect(() => {
         getData(url).then(data => {
             setData(data);
             setLoading(false);
         })
     }, [url, setData])
-
+    console.log("data.auctions.lenght = " + data.auctions.length);
     if (loading) return <h3>Loading...</h3>
-
     return (
         <>
             <Filters />
@@ -66,6 +64,5 @@ export default function Listings() {
             )}
 
         </>
-
     )
 }

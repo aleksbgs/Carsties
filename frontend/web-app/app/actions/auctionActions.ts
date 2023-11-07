@@ -7,7 +7,7 @@ import { FieldValues } from "react-hook-form";
 import { revalidatePath } from "next/cache";
 
 export async function getData(query: string): Promise<PagedResult<Auction>> {
-    return await fetchWrapper.get(`search/`)
+    return await fetchWrapper.get(`search${query}`)
 }
 
 export async function updateAuctionTest() {
@@ -15,12 +15,11 @@ export async function updateAuctionTest() {
         mileage: Math.floor(Math.random() * 100000) + 1
     }
 
-    return await fetchWrapper.put('auctions/afbee524-5972-4075-8800-7d1f9d7b0a0c', data);
+    return await fetchWrapper.put('auctions/afbee524-5972-4075-8800-7d1f9d7b0a0c', data)
 }
 
 export async function createAuction(data: FieldValues) {
     return await fetchWrapper.post('auctions', data);
-   // return await fetchWrapper.get(`search/`)
 }
 
 export async function getDetailedViewData(id: string): Promise<Auction> {
