@@ -86,9 +86,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:80
-      - ClientApp=http://app.riomare.com
+      - ClientApp=http://app.riomire.com
       - ConnectionStrings__DefaultConnection=Server=postgres:5432;User Id=postgres;Password=postgrespw;Database=identity
-      - VIRTUAL_HOST=id.riomare.com
+      - VIRTUAL_HOST=id.riomire.com
     depends_on:
       - postgres
     networks:
@@ -102,8 +102,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:80
-      - ClientApp=https://app.riomare.com
-      - VIRTUAL_HOST=api.riomare.com
+      - ClientApp=https://app.riomire.com
+      - VIRTUAL_HOST=api.riomire.com
     networks:
       custom:
   bid-svc:
@@ -148,15 +148,15 @@ services:
     volumes:
       - /var/lib/web/data
     extra_hosts:
-      - id.riomare.com:10.5.0.200
+      - id.riomire.com:10.5.0.200
     environment:
       - NEXTAUTH_SECRET=somethingreallyreallysecret
-      - NEXTAUTH_URL=http://app.riomare.com
+      - NEXTAUTH_URL=http://app.riomire.com
       - NEXTAUTH_URL_INTERNAL=http://web-app:3000
       - API_URL=http://gateway-svc/
-      - ID_URL=http://id.riomare.com
+      - ID_URL=http://id.riomire.com
       - NEXT_PUBLIC_NOTIFY_URL=http://gateway-svc/notifications
-      - VIRTUAL_HOST=app.riomare.com
+      - VIRTUAL_HOST=app.riomire.com
       - VIRTUAL_PORT=3000
     networks:
       custom:
