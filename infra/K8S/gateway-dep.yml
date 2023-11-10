@@ -18,8 +18,8 @@ spec:
         env:
           - name: ClientApp
             value: https://app.riomire.com
-          -  name: IdentityServiceUrl
-             value: https://id.riomire.com
+          - name: IdentityServiceUrl
+            value: https://id.riomire.com
 
 
 ---
@@ -28,8 +28,8 @@ kind: Service
 metadata:
   name: gateway-clusterip
 spec:
+  type: ClusterIP
   selector:
-    type: ClusterIP
     app: gateway-svc
   ports:
   - port: 80
