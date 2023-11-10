@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: serch-svc
+  name: search-svc
 spec:
   selector:
     matchLabels:
