@@ -20,7 +20,7 @@ public static class Config
     public static IEnumerable<Client> Clients(IConfiguration config) =>
         new Client[]
         {
-new Client
+            new Client
             {
                 ClientId = "postman",
                 ClientName = "Postman",

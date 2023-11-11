@@ -1,3 +1,4 @@
+using Duende.IdentityServer;
 using Duende.IdentityServer.Services;
 using IdentityService.Data;
 using IdentityService.Models;
@@ -35,21 +36,26 @@ internal static class HostingExtensions
                     options.IssuerUri = "identity-svc";
                 }
 
+                if (builder.Environment.IsProduction())
+                {
+                    options.IssuerUri = "https://id.riomire.com";
+                }
+
                 // see https://docs.duendesoftware.com/identityserver/v6/fundamentals/resources/
-               // options.EmitStaticAudienceClaim = true;
+                // options.EmitStaticAudienceClaim = true;
             })
             .AddInMemoryIdentityResources(Config.IdentityResources)
             .AddInMemoryApiScopes(Config.ApiScopes)
             .AddInMemoryClients(Config.Clients(builder.Configuration))
             .AddAspNetIdentity<ApplicationUser>()
             .AddProfileService<CustomProfileService>();
+
         builder.Services.ConfigureApplicationCookie(options =>
         {
             options.Cookie.SameSite = SameSiteMode.Lax;
         });
 
         builder.Services.AddAuthentication();
-           
 
         return builder.Build();
     }
@@ -66,15 +72,16 @@ internal static class HostingExtensions
         app.UseStaticFiles();
         app.UseRouting();
 
-
-        if(app.Environment.IsProduction())
+        if (app.Environment.IsProduction())
         {
-            app.Use(async (ctx,next)=>{
+            app.Use(async (ctx, next) =>
+            {
                 var serverUrls = ctx.RequestServices.GetRequiredService<IServerUrls>();
-                serverUrls.Origin = serverUrls.Origin ="https://id.riomire.com";
+                serverUrls.Origin = serverUrls.Origin = "https://id.riomire.com";
                 await next();
             });
         }
+
 
         app.UseIdentityServer();
         app.UseAuthorization();
