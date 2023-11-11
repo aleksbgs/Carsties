@@ -3,6 +3,7 @@ using IdentityService.Data;
 using IdentityService.Models;
 using IdentityService.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -64,6 +65,17 @@ internal static class HostingExtensions
 
         app.UseStaticFiles();
         app.UseRouting();
+
+
+        if(app.Environment.IsProduction())
+        {
+            app.Use(async (ctx,next)=>{
+                var serverUrls = ctx.RequestServices.GetRequiredService<IServerUrls>();
+                serverUrls.Origin = serverUrls.Origin ="https://id.riomire.com";
+                await next();
+            });
+        }
+
         app.UseIdentityServer();
         app.UseAuthorization();
 
