@@ -150,7 +150,7 @@ services:
     extra_hosts:
       - id.riomire.com:10.5.0.200
     environment:
-      - NEXTAUTH_SECRET=somethingreallyreallysecret
+      - NEXTAUTH_SECRET=secret
       - NEXTAUTH_URL=http://app.riomire.com
       - NEXTAUTH_URL_INTERNAL=http://web-app:3000
       - API_URL=http://gateway-svc/

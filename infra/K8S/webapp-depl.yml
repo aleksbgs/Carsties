@@ -17,7 +17,7 @@ spec:
         imagePullPolicy: Never
         env:
           - name: NEXTAUTH_SECRET
-            value: somethingreallyreallysecret
+            value: secret
           - name: NEXTAUTH_URL
             value: https://app.riomire.com
           - name: API_URL

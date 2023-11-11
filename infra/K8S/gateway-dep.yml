@@ -16,9 +16,9 @@ spec:
         image: aleksbgs1/gateway-svc
         imagePullPolicy: Never
         env:
-          - name: ClientApp
+          - name:  ClientApp
             value: https://app.riomire.com
-          - name: IdentityServiceUrl
+          - name:  IdentityServiceUrl
             value: https://id.riomire.com
 
 
