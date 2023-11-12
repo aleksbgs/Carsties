@@ -20,8 +20,7 @@ export default function SignalRProvider({ children, user }: Props) {
     const [connection, setConnection] = useState<HubConnection | null>(null);
     const setCurrentPrice = useAuctionStore(state => state.setCurrentPrice);
     const addBid = useBidStore(state => state.addBid);
-    const apiUrl = 'https://api.riomire.com/notifications';
-
+    const apiUrl = "https://api.riomire.com/notifications";
 
     useEffect(() => {
         const newConnection = new HubConnectionBuilder()
