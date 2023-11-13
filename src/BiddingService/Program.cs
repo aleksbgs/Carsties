@@ -66,7 +66,7 @@ await Policy.Handle<TimeoutException>()
     .ExecuteAndCaptureAsync(async () =>
     {
         await DB.InitAsync("BidDb", MongoClientSettings
-            .FromConnectionString(builder.Configuration.GetConnectionString("BidDbConnection")));
+            .FromConnectionString("mongodb://mongoUn:mongoSecretPw@mongo-clusterip"));
     });
 
 app.Run();
