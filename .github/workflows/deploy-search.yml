@@ -11,7 +11,6 @@ env:
   REGISTRY_IMAGE: aleksbgs1/search-svc
   DOCKERFILE: src/SearchService/Docker
   DEPLOYMENT_NAME: search-svc
-  
 jobs:
   build:
 
