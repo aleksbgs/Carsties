@@ -9,14 +9,12 @@ on:
 
 env:
   REGISTRY_IMAGE: aleksbgs1/bid-svc
-  DOCKERFILE: src/BidingService/Docker
+  DOCKERFILE: src/BidingService/Dockerfile
   DEPLOYMENT_NAME: bid-svc
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: docker/setup-buildx-action@v2
     - name: Login to docker hub

@@ -9,11 +9,10 @@ on:
 
 env:
   REGISTRY_IMAGE: aleksbgs1/search-svc
-  DOCKERFILE: src/SearchService/Docker
+  DOCKERFILE: src/SearchService/Dockerfile
   DEPLOYMENT_NAME: search-svc
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: docker/setup-buildx-action@v2

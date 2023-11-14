@@ -6,17 +6,13 @@ on:
     branches: [ "master" ]
     paths:
       - 'src/NotificationService/**'
-
 env:
   REGISTRY_IMAGE: aleksbgs1/notify-svc
-  DOCKERFILE: src/NotificationService/Docker
+  DOCKERFILE: src/NotificationService/Dockerfile
   DEPLOYMENT_NAME: notify-svc
-  
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: docker/setup-buildx-action@v2
     - name: Login to docker hub

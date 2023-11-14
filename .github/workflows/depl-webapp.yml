@@ -6,17 +6,14 @@ on:
     branches: [ "master" ]
     paths:
       - 'frontend/web-app/**'
-
 env:
   REGISTRY_IMAGE: aleksbgs1/web-app
-  DOCKERFILE: frontend/web-app/Docker
+  DOCKERFILE: frontend/web-app/Dockerfile
   DEPLOYMENT_NAME: webapp
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: docker/setup-buildx-action@v2
     - name: Login to docker hub

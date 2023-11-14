@@ -9,14 +9,12 @@ on:
 
 env:
   REGISTRY_IMAGE: aleksbgs1/gateway-svc
-  DOCKERFILE: src/GatewayService/Docker
+  DOCKERFILE: src/GatewayService/Dockerfile
   DEPLOYMENT_NAME: gateway-svc
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: docker/setup-buildx-action@v2
     - name: Login to docker hub
