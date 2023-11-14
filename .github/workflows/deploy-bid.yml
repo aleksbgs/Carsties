@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY_IMAGE: aleksbgs1/bid-svc
-  DOCKERFILE: src/BidingService/Dockerfile
+  DOCKERFILE: src/BiddingService/Dockerfile
   DEPLOYMENT_NAME: bid-svc
   
 jobs:
